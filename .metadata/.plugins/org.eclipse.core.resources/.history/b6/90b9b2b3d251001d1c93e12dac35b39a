@@ -1,0 +1,13 @@
+package StreamApIs;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class MapUsage {
+	public static void main(String[] args) {
+		List<String> st = Arrays.asList(null, "bhuvi", "bus", "car", "Van", "car", "auto");
+		List<String> upperCase = new ArrayList<>();
+		
+	}
+}

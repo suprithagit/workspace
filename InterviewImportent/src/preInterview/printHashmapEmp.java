@@ -1,0 +1,29 @@
+package preInterview;
+
+import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+//2. How to print employee class as hashMap using java8
+public class printHashmapEmp {
+
+	public static void main(String[] args) {
+		
+		Map<Employee,Integer> emp= new HashMap<>();
+		
+		List<Employee> emplist= Arrays.asList(new Employee("Raman",25,"Mysore"),
+				new Employee("Kiran",26,"Mandya"),
+				new Employee("Kris",29,"Belgam"),
+				new Employee("Rohan",31,"Devagiri"));
+			
+		emplist.forEach(System.out::println);
+		
+		Map<String, List<Employee>> empMap= emplist.stream()
+				.collect(Collectors.groupingBy(Employee::getCity));	
+		empMap.entrySet().stream().forEach(System.out::println);
+		
+		
+	}
+}
+
+

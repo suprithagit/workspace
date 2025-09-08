@@ -1,0 +1,12 @@
+package StreamApIs;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeMain {
+	public static void main(String[] args) {
+		List<ConstPojoClass> details=new ArrayList<ConstPojoClass>();
+		details.add("pruthvi","Raj",35,80000);
+	
+	}
+}

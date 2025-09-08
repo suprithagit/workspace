@@ -1,0 +1,18 @@
+package preInterview;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StudentCls {
+//Create List of student and sort it by firstname
+	public static void main(String[] args) {
+		
+		List<Student> student=Arrays.asList(new Student(1,"Rama","raj",'A'),
+				new Student(2,"kama","raj",'B'),
+				new Student(3,"Bama","raj",'A'),
+				new Student(4,"Sama","raj",'C'));
+		student.stream().sorted((e1,e2)-> e1.getFirstName().toString().compareTo(e2.getFirstName().toString()))
+		.forEach(System.out::println);
+	}	
+	
+}

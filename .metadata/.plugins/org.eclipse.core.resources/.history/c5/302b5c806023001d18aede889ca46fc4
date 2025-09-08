@@ -1,0 +1,23 @@
+package iterataos;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
+public class ListItr {
+public static void main(String[] args) {
+	List l=new ArrayList();
+	l.add(10); l.add("Raman"); l.add(18); l.add(3); l.add("Seeta");
+	System.out.println(l);
+	// Now to iterate one by one
+	ListIterator li= l.listIterator();
+	while(li.hasNext()) {
+		System.out.println(li.next());
+	}
+	while(li.hasPrevious()) {
+		System.out.println(li.previous());
+	}//for Reversing we need both whiles
+	
+	li.remove("Seeta");
+}
+}

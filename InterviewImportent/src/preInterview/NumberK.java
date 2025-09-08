@@ -1,0 +1,40 @@
+package preInterview;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class NumberK {
+
+	//Having list of n numbers and find the diifference between them which should be equal to k
+	
+	public static void main(String[] args) {
+		System.out.println("Enter the number : ");
+		java.util.Scanner sc= new Scanner(System.in);
+		int n=sc.nextInt();
+		
+		List<Integer> numlist= new ArrayList<>() ;
+		for (int i = 0; i <=n; i++) {
+			numlist.add(i);
+		}
+		System.out.println(numlist);
+		System.out.println("Enter the number to find difference: ");
+		int k=sc.nextInt();
+		
+		List<Integer> diffList= new ArrayList<>();
+		for (int i = 0; i <=n; i++) {
+				if(i%k==0 &&i>0)
+					diffList.add(i);	
+		}
+		System.out.println("Using Java 7"+diffList);
+		
+		List<Integer> result=numlist.stream()
+				.filter(e->(e>0) && (e%k==0))
+				.collect(Collectors.toList());
+		System.out.println(result);
+	}
+	
+}

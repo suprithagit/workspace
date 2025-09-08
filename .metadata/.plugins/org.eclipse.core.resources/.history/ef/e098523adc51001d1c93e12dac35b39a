@@ -1,0 +1,21 @@
+package StreamApIs;
+
+public class ConstPojoClass {
+	String empFirstName;
+	String empLastName;
+	int age;
+	long salary;
+	public ConstPojoClass(String empFirstName, String empLastName, int age, long salary) {
+		super();
+		this.empFirstName = empFirstName;
+		this.empLastName = empLastName;
+		this.age = age;
+		this.salary = salary;
+	}
+	@Override
+	public String toString() {
+		return "ConstPojoClass [empFirstName=" + empFirstName + ", empLastName=" + empLastName + ", age=" + age
+				+ ", salary=" + salary + "]";
+	}
+
+}

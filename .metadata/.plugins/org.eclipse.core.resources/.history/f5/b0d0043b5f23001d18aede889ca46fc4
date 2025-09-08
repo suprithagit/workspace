@@ -1,0 +1,12 @@
+package iterataos;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListItr {
+public static void main(String[] args) {
+	List l=new ArrayList();
+	l.add(10); l.add("Raman"); l.add(18); l.add(3); l.add("Seeta");
+	System.out.println(l);
+}
+}

@@ -1,0 +1,18 @@
+package preInterview;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class ConsecutiveNum {
+ 
+	public static void main(String[] args) {
+		List<Integer> n= Arrays.asList(4,5,7,3);
+		List<Integer> naturalOrd= n.stream().sorted().collect(Collectors.toList());
+		System.out.println(naturalOrd);
+		int num=naturalOrd.size();
+		System.out.println(num);
+		int k=naturalOrd.indexOf(num);
+		System.out.println(k);
+	}
+}

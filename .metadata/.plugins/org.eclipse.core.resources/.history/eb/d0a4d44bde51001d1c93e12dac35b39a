@@ -1,0 +1,21 @@
+package StreamApIs;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeMain {
+	public static void main(String[] args) {
+		List<ConstPojoClass> details=new ArrayList<ConstPojoClass>();
+		//to add directly we use 'new' keyword and class name
+		details.add(new ConstPojoClass("pruthvi","Raj",35,80000));
+		details.add(new ConstPojoClass("vinay","mohan",25,40000));
+		details.add(new ConstPojoClass("Naveen","kumar",22,20000));
+		details.add(new ConstPojoClass("ria","Lal",28,50000));
+		details.add(new ConstPojoClass("shashi","kala",21,12000));
+		System.out.println(details);
+		
+		
+		
+	
+	}
+}

@@ -1,0 +1,31 @@
+package preInterview;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class ConsecutiveNum {
+ 
+	public static void main(String[] args) {
+		List<Integer> n= Arrays.asList(4,5,7,3);
+		List<Integer> naturalOrd= n.stream().sorted().collect(Collectors.toList());
+		System.out.println(naturalOrd);
+		
+		List<Integer> l= new LinkedList<>(naturalOrd);
+		int num=l.get(l.size()-1);
+		
+		List<Integer> result= new ArrayList<>();	
+		for(int i=1;i<=num;i++) {
+			for(int j=0;j<=l.size()-1;j++) {
+				if(i!=l.get(j)) {
+			result.add(i);
+				}
+			}
+		}
+		
+		System.out.println(result);
+		
+	}
+}

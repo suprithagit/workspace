@@ -1,0 +1,23 @@
+package preInterview;
+
+import java.util.*;
+
+public class printHashmapEmp {
+
+	public static void main(String[] args) {
+		Map<String,Integer> emp= new HashMap<>();
+		emp.put("Arun", 28);
+		
+		Hashmap<Employee>
+		
+	}
+}
+
+
+public class Employee{
+	int firstname ;
+	int age;
+	int city;
+	
+	in
+}

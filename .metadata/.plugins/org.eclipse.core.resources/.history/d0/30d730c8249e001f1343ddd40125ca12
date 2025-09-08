@@ -1,0 +1,26 @@
+package preInterview;
+
+import java.util.*;
+
+public class printHashmapEmp {
+
+	public static void main(String[] args) {
+		Map<String,Integer> emp= new HashMap<>();
+		emp.put("Arun", 28);
+		
+		List<Employee> emplist= Arrays.asList(new Employee("Raman",25,"Mysore"),
+				new Employee("Kiran",26,"Mandya"),
+				new Employee("Kris",29,"Belgam"),
+				new Employee("Rohan",31,"Devagiri"));
+			
+		emplist.forEach(System.out::println);
+		
+		
+		HashMap<Employee,String> employee= new HashMap<>();
+		
+		
+		
+	}
+}
+
+

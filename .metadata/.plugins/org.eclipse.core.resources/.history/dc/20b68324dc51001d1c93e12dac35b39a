@@ -1,0 +1,9 @@
+package StreamApIs;
+
+public class ConstPojoClass {
+	String empFirstName;
+	String empLastName;
+	int age;
+	long salary;
+
+}

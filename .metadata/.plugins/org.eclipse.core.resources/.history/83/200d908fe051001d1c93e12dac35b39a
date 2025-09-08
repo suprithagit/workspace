@@ -1,0 +1,7 @@
+package StreamApIs;
+
+public class CompanyPojo {
+ String name;
+ int age;
+ String Place;
+}

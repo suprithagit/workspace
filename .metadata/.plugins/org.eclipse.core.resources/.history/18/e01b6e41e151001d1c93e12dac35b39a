@@ -1,0 +1,33 @@
+package StreamApIs;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class EmployeeMain {
+	public static void main(String[] args) {
+		List<ConstPojoClass> details=new ArrayList<ConstPojoClass>();
+		//to add directly we use 'new' keyword and class name
+		details.add(new ConstPojoClass("pruthvi","Raj",35,80000));
+		details.add(new ConstPojoClass("vinay","mohan",25,40000));
+		details.add(new ConstPojoClass("Naveen","kumar",22,20000));
+		details.add(new ConstPojoClass("ria","Lal",28,50000));
+		details.add(new ConstPojoClass("shashi","kala",21,12000));
+		details.add(new ConstPojoClass(null,null,0,0));
+		 
+		List<CompanyPojo> company = Arrays.asList(new CompanyPojo("Nihilent",10, "Chennai"),
+				new CompanyPojo("Nihilent",10, "Punae"),
+				new CompanyPojo("EwcoBiased",6, "Bengaluru"),
+				new CompanyPojo("HCL",30, "Delhi")
+				);
+		
+		System.out.println(details);
+		List<ConstPojoClass> employee=new ArrayList<>();
+		
+		//1 - Convert to apper case and arrange it into ascending order
+		details.stream().filter(n->n.empFirstName!=null).map(n->n.).forEach(n->System.out.println(n));
+		
+		
+	
+	}
+}

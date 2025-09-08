@@ -1,0 +1,19 @@
+package preInterview;
+
+public class Employee {
+	
+		String firstname ;
+		int age;
+		String city;
+		
+		public Employee(String string, int age, String string2) {
+			this.firstname = string;
+			this.age = age;
+			this.city = string2;
+		}
+		
+		
+		
+
+	
+}

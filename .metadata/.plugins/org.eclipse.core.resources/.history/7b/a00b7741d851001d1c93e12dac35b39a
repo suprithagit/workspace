@@ -1,0 +1,27 @@
+package StreamApIs;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class MapUsage {
+	public static void main(String[] args) {
+		List<String> st = Arrays.asList(null,"bhuvi", "bus", "car", "Van", "Car", "auto");
+		System.out.println(st);
+		List<String> upperCase = new ArrayList<>();
+
+		//we get null pointer exception to perform this operation so need to handle
+		for (String name : st) {
+			if(name!=null)
+			upperCase.add(name.toUpperCase());
+			}
+		System.out.println(upperCase);
+		
+		//Using Stream
+		upperCase=st.stream().filter(n->n!=null).map(n->n.toUpperCase()).sorted().collect(Collectors.toList());
+		System.out.println(upperCase);
+		upperCase.stream().distinct().forEach(n->System.out.println(n));
+		st.stream().filter(n->n!=null && n.equalsIgnoreCase("car")).forEach(System.out::println);
+	}
+}

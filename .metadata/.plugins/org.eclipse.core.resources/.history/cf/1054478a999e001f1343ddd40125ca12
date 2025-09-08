@@ -1,0 +1,11 @@
+package preInterview;
+
+public class ReverseString {
+	//Reverse the given String
+	public static void main(String[] args) {
+		String s="KARAN";
+		StringBuffer res =new StringBuffer(s);
+		res.reverse();
+		System.out.println(res);
+	}
+}

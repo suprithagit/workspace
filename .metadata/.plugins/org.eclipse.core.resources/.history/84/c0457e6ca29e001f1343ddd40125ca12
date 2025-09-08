@@ -1,0 +1,28 @@
+package preInterview;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.xml.stream.events.Characters;
+
+public class ReverseString {
+	//Reverse the given String
+	public static void main(String[] args) {
+		String s="KARAN";
+		StringBuffer res =new StringBuffer(s);
+		res.reverse();
+		System.out.println(res);
+		
+		String rev="";
+		
+		for (int i=s.length()-1;i>=0;i--) {
+		rev=rev+s.charAt(i);
+	}
+		System.out.println(rev);
+		
+		// using java 8
+		List<char[]> cr= Arrays.asList(s.toCharArray());
+		System.out.println(cr);
+	}	
+}

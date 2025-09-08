@@ -1,0 +1,27 @@
+package iterataos;
+
+import java.util.HashSet;
+import java.util.Set;
+
+/*
+ * List is index based data Structer, can store duplicate elements 
+ * any number of null values allowed, follows Insersion Order
+ * we can Iterate(get) elements Through Iterator or List Iteratot
+ * 
+ * Set stores data using hashcode and uses equals()
+ * Only IterAator is Used
+ * Duplicates not allowed and only one null allowed
+ * */
+public class ListSet {
+	public static void main(String[] args) {
+		
+	Set<String> s=new HashSet<>();
+	s.add("Arun");
+	s.add(null);
+	s.add("Manish");
+	s.add(null);
+	s.add("Arun");
+	s.add("Ban");
+	System.out.println(s);
+}
+}

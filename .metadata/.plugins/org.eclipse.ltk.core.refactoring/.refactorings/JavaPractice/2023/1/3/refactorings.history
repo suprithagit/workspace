@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JavaPractice/src/java8methodRef/MethodRefer.java&apos; to &apos;MainAccount.java&apos;" description="Rename resource &apos;MethodRefer.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/java8methodRef/MethodRefer.java" name="MainAccount.java" stamp="1674312576450" updateReferences="true"/>
+</session>

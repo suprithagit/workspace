@@ -1,0 +1,28 @@
+package preInterview;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class PrintDuplicates {
+
+	public static void main(String[] args) {
+		List<Integer> randnum=Arrays.asList(1,3,4,2,1,3,6,3,9,8,9,4,3);
+		Collections.sort(randnum);
+		System.out.println(randnum);
+		
+		int array[]= {1,3,4,2,1,3,6,3,9,8,9,4,3};
+		
+			for(int i=0;i<array.length-1;i++) {
+				int count=0;
+			for(int j=i+1;j<array.length;j++) {
+				
+				if(array[i]==array[j]) {
+					System.out.println(array[i]);
+					count++;
+				}
+			}
+		}
+		
+	}
+}

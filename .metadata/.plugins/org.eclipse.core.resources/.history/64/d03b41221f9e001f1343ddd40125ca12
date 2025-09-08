@@ -1,0 +1,18 @@
+package preInterview;
+
+public class Employee {
+	
+		int firstname ;
+		int age;
+		int city;
+		
+		public Employee(int firstname, int age, int city) {
+			this.firstname = firstname;
+			this.age = age;
+			this.city = city;
+		}
+		
+		
+
+	
+}
