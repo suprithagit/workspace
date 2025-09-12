@@ -1,0 +1,31 @@
+package forLoops;
+
+import java.util.stream.IntStream;
+
+public class ForLoopNumbers {
+
+	public static void main(String[] args) {
+		var n=5;
+		System.out.println("printing 0 to n");
+		for(var i=0; i<=n; i++) {
+			System.out.print(i);
+		}
+		
+		System.out.println("***Printing same using java 8 ");
+		IntStream.rangeClosed(0, n)
+        .forEach(System.out::print);
+		
+		System.out.println("******Reversing n up to zero");
+		for(var i=n; i>=0;i--) {System.out.print(i);}
+		
+		System.out.println("******printing natural numbers");
+		for(int i = 1; i <=n; i++) {
+			System.out.print(i);
+		}
+		
+		System.out.println("Single multiplication table");
+		for(int i=1;i<=10;i++) {
+			System.out.println(i*n);
+			}
+	}
+}

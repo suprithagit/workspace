@@ -1,0 +1,18 @@
+package forLoops;
+
+import java.util.stream.IntStream;
+
+public class ForLoopNumbers {
+
+	public static void main(String[] args) {
+		var n=5;
+		for(var i=0; i<=n; i++) {
+			System.out.print(i);
+		}
+		System.out.println("    ");
+		IntStream.rangeClosed(0, n)
+        .forEach(System.out::println);
+		System.out.println("Reversing both the above");
+		for(var i=n; i>=0;i--) {System.out.print(i);}
+	}
+}
